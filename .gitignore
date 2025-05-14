@@ -1,0 +1,8 @@
+lfw/
+extracted/
+baseline_results/
+venv/
+# Ignore large files causing push issues
+venv/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so
+venv/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so
+archive.zip

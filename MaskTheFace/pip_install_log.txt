@@ -1,0 +1,1691 @@
+Collecting dlib==19.19.0
+  Using cached dlib-19.19.0.tar.gz (3.2 MB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: dlib
+  Building wheel for dlib (setup.py): started
+  Building wheel for dlib (setup.py): still running...
+  Building wheel for dlib (setup.py): finished with status 'error'
+  ERROR: Command errored out with exit status 1:
+   command: /root/face_recog/venv/bin/python -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/setup.py'"'"'; __file__='"'"'/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-502phie2
+       cwd: /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/
+  Complete output (825 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  package init file 'dlib/__init__.py' not found (or not a regular file)
+  running build_ext
+  Building extension for Python 3.6.15 (default, Apr 28 2025, 00:40:56)
+  Invoking CMake setup: 'cmake /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/build/lib.linux-x86_64-3.6 -DPYTHON_EXECUTABLE=/root/face_recog/venv/bin/python -DCMAKE_BUILD_TYPE=Release'
+  CMake Deprecation Warning at CMakeLists.txt:2 (CMAKE_MINIMUM_REQUIRED):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  
+  
+  -- The C compiler identification is GNU 13.3.0
+  -- The CXX compiler identification is GNU 13.3.0
+  -- Detecting C compiler ABI info
+  -- Detecting C compiler ABI info - done
+  -- Check for working C compiler: /usr/bin/cc - skipped
+  -- Detecting C compile features
+  -- Detecting C compile features - done
+  -- Detecting CXX compiler ABI info
+  -- Detecting CXX compiler ABI info - done
+  -- Check for working CXX compiler: /usr/bin/c++ - skipped
+  -- Detecting CXX compile features
+  -- Detecting CXX compile features - done
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/CMakeLists.txt:8 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  
+  
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/tools/pybind11Tools.cmake:8 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  Call Stack (most recent call first):
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/CMakeLists.txt:33 (include)
+  
+  
+  CMake Warning (dev) at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/tools/FindPythonLibsNew.cmake:60 (find_package):
+    Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+    are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+  
+  Call Stack (most recent call first):
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/tools/pybind11Tools.cmake:16 (find_package)
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/CMakeLists.txt:33 (include)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+  
+  -- Found PythonInterp: /root/face_recog/venv/bin/python (found version "3.6.15")
+  -- Found PythonLibs: /root/.pyenv/versions/3.6.15/lib/libpython3.6m.so
+  -- Performing Test HAS_CPP14_FLAG
+  -- Performing Test HAS_CPP14_FLAG - Success
+  -- pybind11 v2.2.2
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:7 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  
+  
+  -- Using CMake version: 3.28.3
+  -- Compiling dlib version: 19.19.0
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/set_compiler_specific_options.cmake:2 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  Call Stack (most recent call first):
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:30 (include)
+  
+  
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/check_if_sse4_instructions_executable_on_host.cmake:3 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  Call Stack (most recent call first):
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/set_compiler_specific_options.cmake:13 (include)
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:30 (include)
+  
+  
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_sse4/CMakeLists.txt:2 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  
+  
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/set_compiler_specific_options.cmake:2 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  Call Stack (most recent call first):
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_sse4/CMakeLists.txt:8 (include)
+  
+  
+  -- SSE4 instructions can be executed by the host processor.
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/check_if_avx_instructions_executable_on_host.cmake:3 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  Call Stack (most recent call first):
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/set_compiler_specific_options.cmake:17 (include)
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:30 (include)
+  
+  
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_avx/CMakeLists.txt:2 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  
+  
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/set_compiler_specific_options.cmake:2 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  Call Stack (most recent call first):
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_avx/CMakeLists.txt:8 (include)
+  
+  
+  -- AVX instructions can be executed by the host processor.
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/check_if_neon_available.cmake:3 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  Call Stack (most recent call first):
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/set_compiler_specific_options.cmake:21 (include)
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:30 (include)
+  
+  
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_neon/CMakeLists.txt:2 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  
+  
+  -- Enabling AVX instructions
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/use_cpp_11.cmake:5 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  Call Stack (most recent call first):
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:47 (include)
+  
+  
+  -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+  -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+  -- Found Threads: TRUE
+  -- Found X11: /usr/include
+  -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+  -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+  -- Looking for gethostbyname
+  -- Looking for gethostbyname - found
+  -- Looking for connect
+  -- Looking for connect - found
+  -- Looking for remove
+  -- Looking for remove - found
+  -- Looking for shmat
+  -- Looking for shmat - found
+  -- Looking for IceConnectionNumber in ICE
+  -- Looking for IceConnectionNumber in ICE - found
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/find_libpng.cmake:4 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  Call Stack (most recent call first):
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:436 (include)
+  
+  
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_libpng/CMakeLists.txt:2 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  
+  
+  -- Found system copy of libpng: /usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libz.so
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/find_libjpeg.cmake:4 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  Call Stack (most recent call first):
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:497 (include)
+  
+  
+  CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_libjpeg/CMakeLists.txt:2 (cmake_minimum_required):
+    Compatibility with CMake < 3.5 will be removed from a future version of
+    CMake.
+  
+    Update the VERSION argument <min> value or use a ...<max> suffix to tell
+    CMake that the project does not need compatibility with older versions.
+  
+  
+  -- Found system copy of libjpeg: /usr/lib/x86_64-linux-gnu/libjpeg.so
+  -- Searching for BLAS and LAPACK
+  -- Searching for BLAS and LAPACK
+  -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1")
+  -- Checking for module 'cblas'
+  --   Package 'cblas', required by 'virtual:world', not found
+  -- Checking for module 'lapack'
+  --   Found lapack, version 0.3.26+ds
+  -- Looking for sys/types.h
+  -- Looking for sys/types.h - found
+  -- Looking for stdint.h
+  -- Looking for stdint.h - found
+  -- Looking for stddef.h
+  -- Looking for stddef.h - found
+  -- Check size of void*
+  -- Check size of void* - done
+  -- Found OpenBLAS library
+  -- Looking for sgetrf_single
+  -- Looking for sgetrf_single - found
+  -- Using OpenBLAS's built in LAPACK
+  -- Looking for cblas_ddot
+  -- Looking for cblas_ddot - found
+  -- Looking for sgesv
+  -- Looking for sgesv - not found
+  -- Looking for sgesv_
+  -- Looking for sgesv_ - not found
+  CMake Warning (dev) at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:607 (find_package):
+    Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake
+    --help-policy CMP0146" for policy details.  Use the cmake_policy command to
+    set the policy and suppress this warning.
+  
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+  
+  CUDA_TOOLKIT_ROOT_DIR not found or specified
+  -- Could NOT find CUDA (missing: CUDA_TOOLKIT_ROOT_DIR CUDA_NVCC_EXECUTABLE CUDA_INCLUDE_DIRS CUDA_CUDART_LIBRARY) (Required is at least version "7.5")
+  -- DID NOT FIND CUDA
+  -- Disabling CUDA support for dlib.  DLIB WILL NOT USE CUDA
+  -- C++11 activated.
+  -- Configuring done (18.8s)
+  -- Generating done (0.0s)
+  -- Build files have been written to: /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/build/temp.linux-x86_64-3.6
+  Invoking CMake build: 'cmake --build . --config Release -- -j4'
+  [  1%] Building CXX object dlib_build/CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.o
+  [  2%] Building CXX object dlib_build/CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.o
+  [  3%] Building CXX object dlib_build/CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.o
+  [  4%] Building CXX object dlib_build/CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.o
+  [  5%] Building CXX object dlib_build/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.o
+  [  6%] Building CXX object dlib_build/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.o
+  [  8%] Building CXX object dlib_build/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.o
+  [  9%] Building CXX object dlib_build/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.o
+  [ 10%] Building CXX object dlib_build/CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.o
+  [ 11%] Building CXX object dlib_build/CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.o
+  [ 12%] Building CXX object dlib_build/CMakeFiles/dlib.dir/unicode/unicode.cpp.o
+  [ 13%] Building CXX object dlib_build/CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.o
+  [ 15%] Building CXX object dlib_build/CMakeFiles/dlib.dir/data_io/mnist.cpp.o
+  [ 16%] Building CXX object dlib_build/CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.o
+  In file included from /usr/include/features.h:502,
+                   from /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:39,
+                   from /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:679,
+                   from /usr/include/c++/13/bits/requires_hosted.h:31,
+                   from /usr/include/c++/13/sstream:38,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/unicode/../assert.h:7,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/unicode/../uintn.h:7,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/unicode/unicode.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/unicode/unicode.cpp:5:
+  In function ‘size_t mbstowcs(wchar_t*, const char*, size_t)’,
+      inlined from ‘const std::wstring dlib::convert_mbstring_to_wstring(const std::string&)’ at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/unicode/unicode.cpp:155:22:
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h:123:12: warning: argument 1 is null but the corresponding size argument 3 value is 18446744073709551612 [-Wnonnull]
+    123 |     return __glibc_fortify_n (mbstowcs, __len, sizeof (wchar_t),
+        |            ^~~~~~~~~~~~~~~~~
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h: In function ‘const std::wstring dlib::convert_mbstring_to_wstring(const std::string&)’:
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h:104:15: note: in a call to function ‘size_t __mbstowcs_alias(wchar_t*, const char*, size_t)’ declared with attribute ‘access (read_only, 2)’
+    104 | extern size_t __REDIRECT_NTH (__mbstowcs_alias,
+        |               ^~~~~~~~~~~~~~
+  [ 17%] Building CXX object dlib_build/CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.o
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../geometry/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../geometry/vector.h:12,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../geometry/rectangle.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../geometry.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/image_dataset_metadata.h:8,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/image_dataset_metadata.cpp:6:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/image_dataset_metadata.h:6:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/mnist.h:9,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/mnist.cpp:6:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/mnist.h:7:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/global_optimization/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/global_optimization/../matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/global_optimization/global_function_search.h:8,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/global_optimization/global_function_search.cpp:2:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/global_optimization/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_algobase.h:65,
+                   from /usr/include/c++/13/vector:62,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/global_optimization/global_function_search.h:7:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/../matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/kalman_filter.h:7,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/kalman_filter.cpp:6:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/../matrix/../algs.h:93,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/../matrix/matrix_exp.h:6:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  [ 18%] Building CXX object dlib_build/CMakeFiles/dlib.dir/test_for_odr_violations.cpp.o
+  [ 19%] Building CXX object dlib_build/CMakeFiles/dlib.dir/svm/auto.cpp.o
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/../matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/function.h:10,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/auto.h:8,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/auto.cpp:6:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/../algs.h:93,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/auto.h:7:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  [ 20%] Building CXX object dlib_build/CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.o
+  [ 22%] Building CXX object dlib_build/CMakeFiles/dlib.dir/bsp/bsp.cpp.o
+  [ 23%] Building CXX object dlib_build/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.o
+  [ 24%] Building CXX object dlib_build/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.o
+  [ 25%] Building CXX object dlib_build/CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.o
+  [ 26%] Building CXX object dlib_build/CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.o
+  [ 27%] Building CXX object dlib_build/CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.o
+  [ 29%] Building CXX object dlib_build/CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.o
+  [ 30%] Building CXX object dlib_build/CMakeFiles/dlib.dir/logger/logger_config_file.cpp.o
+  [ 31%] Building CXX object dlib_build/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.o
+  [ 32%] Building CXX object dlib_build/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.o
+  [ 33%] Building CXX object dlib_build/CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.o
+  [ 34%] Building CXX object dlib_build/CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.o
+  [ 36%] Building CXX object dlib_build/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.o
+  [ 37%] Building CXX object dlib_build/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.o
+  [ 38%] Building CXX object dlib_build/CMakeFiles/dlib.dir/server/server_kernel.cpp.o
+  [ 39%] Building CXX object dlib_build/CMakeFiles/dlib.dir/server/server_iostream.cpp.o
+  [ 40%] Building CXX object dlib_build/CMakeFiles/dlib.dir/server/server_http.cpp.o
+  [ 41%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.o
+  [ 43%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.o
+  [ 44%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.o
+  [ 45%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.o
+  [ 46%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.o
+  [ 47%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.o
+  [ 48%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/async.cpp.o
+  [ 50%] Building CXX object dlib_build/CMakeFiles/dlib.dir/timer/timer.cpp.o
+  [ 51%] Building CXX object dlib_build/CMakeFiles/dlib.dir/stack_trace.cpp.o
+  [ 52%] Building CXX object dlib_build/CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.o
+  [ 53%] Building CXX object dlib_build/CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.o
+  [ 54%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.o
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/tensor.h:8,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/tensor_tools.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/tensor_tools.cpp:6:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/../algs.h:93,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/matrix_exp.h:6:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  [ 55%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.o
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/tensor.h:8,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/cpu_dlib.h:9,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/cpu_dlib.cpp:8:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/../algs.h:93,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/matrix_exp.h:6:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/vector.h:12,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/rectangle.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:20,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/xlib.h:4,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core.h:14,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/fonts.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/fonts.cpp:6:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_construct.h:61,
+                   from /usr/include/c++/13/bits/stl_tempbuf.h:61,
+                   from /usr/include/c++/13/memory:66,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/fonts.h:7:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/vector.h:12,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/rectangle.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:20,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/xlib.h:4,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core.h:14,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/drawable.h:10,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/widgets.h:16,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/widgets.cpp:9:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_algobase.h:65,
+                   from /usr/include/c++/13/algorithm:60,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/widgets.cpp:6:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  [ 56%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.o
+  [ 58%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.o
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/vector.h:12,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/rectangle.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:20,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/xlib.h:4,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core.h:14,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/drawable.h:10,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/drawable.cpp:6:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_construct.h:61,
+                   from /usr/include/c++/13/bits/stl_tempbuf.h:61,
+                   from /usr/include/c++/13/memory:66,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/drawable.h:7:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/vector.h:12,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/rectangle.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:20,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/xlib.h:4,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core.h:14,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/canvas_drawing.h:8,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/canvas_drawing.cpp:6:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:15:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  [ 59%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_widgets/style.cpp.o
+  [ 60%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.o
+  [ 61%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.o
+  [ 62%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.o
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/vector.h:12,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/rectangle.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:20,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/xlib.h:4,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core.h:14,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/style.h:8,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/style.cpp:6:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../algs.h:93,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/style.h:6:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/vector.h:12,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/rectangle.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:20,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/xlib.h:4,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core.h:14,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/drawable.h:10,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/base_widgets.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/base_widgets.cpp:9:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /usr/include/c++/13/bits/locale_classes.h:40,
+                   from /usr/include/c++/13/bits/ios_base.h:41,
+                   from /usr/include/c++/13/ios:44,
+                   from /usr/include/c++/13/ostream:40,
+                   from /usr/include/c++/13/iostream:41,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/base_widgets.cpp:6:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/../geometry/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/../geometry/vector.h:12,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/../geometry/rectangle.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/gui_core_kernel_2.h:20,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/gui_core_kernel_2.cpp:9:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/gui_core_kernel_2.h:15:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  [ 63%] Building CXX object dlib_build/CMakeFiles/dlib.dir/image_loader/png_loader.cpp.o
+  [ 65%] Building CXX object dlib_build/CMakeFiles/dlib.dir/image_saver/save_png.cpp.o
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/vector.h:12,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/rectangle.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/array2d_kernel.h:10,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d.h:7,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/png_loader.cpp:9:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../algs.h:93,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/array2d_kernel.h:7:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../sliding_buffer/../matrix/matrix_op.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../sliding_buffer/../matrix/matrix_mat.h:9,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../sliding_buffer/circular_buffer.h:10,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../sliding_buffer.h:9,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../entropy_encoder_model.h:16,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/image_saver.h:14,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/save_png.h:7,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/save_png.cpp:9:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../sliding_buffer/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /usr/include/c++/13/bits/locale_classes.h:40,
+                   from /usr/include/c++/13/bits/ios_base.h:41,
+                   from /usr/include/c++/13/ios:44,
+                   from /usr/include/c++/13/ostream:40,
+                   from /usr/include/c++/13/iostream:41,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/image_saver.h:7:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  [ 66%] Building CXX object dlib_build/CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.o
+  [ 67%] Building CXX object dlib_build/CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.o
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/vector.h:12,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/rectangle.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/array2d_kernel.h:10,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d.h:7,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/jpeg_loader.cpp:9:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../algs.h:93,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/array2d_kernel.h:7:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/../geometry/../matrix/matrix.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/../geometry/vector.h:12,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/../geometry/rectangle.h:11,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/array2d_kernel.h:10,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d.h:7,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/save_jpeg.cpp:9:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+     60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+        |                                             ^~~~~~~~
+  In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                   from /usr/include/c++/13/string:47,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/../algs.h:93,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/array2d_kernel.h:7:
+  /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+    127 |     struct _GLIBCXX17_DEPRECATED iterator
+        |                                  ^~~~~~~~
+  [ 68%] Linking CXX static library libdlib.a
+  [ 68%] Built target dlib
+  [ 70%] Building CXX object CMakeFiles/dlib_python.dir/src/svm_c_trainer.cpp.o
+  [ 70%] Building CXX object CMakeFiles/dlib_python.dir/src/matrix.cpp.o
+  [ 73%] Building CXX object CMakeFiles/dlib_python.dir/src/dlib.cpp.o
+  [ 73%] Building CXX object CMakeFiles/dlib_python.dir/src/vector.cpp.o
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:43,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python/pybind_utils.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/opaque_types.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/matrix.cpp:4:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:185:10: error: ‘uint16_t’ in namespace ‘std’ does not name a type; did you mean ‘wint_t’?
+    185 |     std::uint16_t nargs;
+        |          ^~~~~~~~
+        |          wint_t
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h: In constructor ‘pybind11::detail::function_call::function_call(pybind11::detail::function_record&, pybind11::handle)’:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:283:20: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    283 |     args.reserve(f.nargs);
+        |                    ^~~~~
+        |                    args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:284:28: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    284 |     args_convert.reserve(f.nargs);
+        |                            ^~~~~
+        |                            args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In member function ‘void pybind11::cpp_function::initialize_generic(pybind11::detail::function_record*, const char*, const std::type_info* const*, pybind11::size_t)’:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:14: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    291 |         rec->nargs = (std::uint16_t) args;
+        |              ^~~~~
+        |              args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:28: error: ‘uint16_t’ is not a member of ‘std’; did you mean ‘wint_t’?
+    291 |         rec->nargs = (std::uint16_t) args;
+        |                            ^~~~~~~~
+        |                            wint_t
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In static member function ‘static PyObject* pybind11::cpp_function::dispatcher(PyObject*, PyObject*, PyObject*)’:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:489:40: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    489 |                 size_t pos_args = func.nargs;    // Number of positional arguments that we need
+        |                                        ^~~~~
+        |                                        args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:620:53: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    620 |                     second_pass_convert.resize(func.nargs, false);
+        |                                                     ^~~~~
+        |                                                     args
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:43,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python/pybind_utils.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/opaque_types.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/dlib.cpp:4:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:185:10: error: ‘uint16_t’ in namespace ‘std’ does not name a type; did you mean ‘wint_t’?
+    185 |     std::uint16_t nargs;
+        |          ^~~~~~~~
+        |          wint_t
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h: In constructor ‘pybind11::detail::function_call::function_call(pybind11::detail::function_record&, pybind11::handle)’:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:283:20: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    283 |     args.reserve(f.nargs);
+        |                    ^~~~~
+        |                    args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:284:28: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    284 |     args_convert.reserve(f.nargs);
+        |                            ^~~~~
+        |                            args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In member function ‘void pybind11::cpp_function::initialize_generic(pybind11::detail::function_record*, const char*, const std::type_info* const*, pybind11::size_t)’:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:14: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    291 |         rec->nargs = (std::uint16_t) args;
+        |              ^~~~~
+        |              args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:28: error: ‘uint16_t’ is not a member of ‘std’; did you mean ‘wint_t’?
+    291 |         rec->nargs = (std::uint16_t) args;
+        |                            ^~~~~~~~
+        |                            wint_t
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In static member function ‘static PyObject* pybind11::cpp_function::dispatcher(PyObject*, PyObject*, PyObject*)’:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:489:40: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    489 |                 size_t pos_args = func.nargs;    // Number of positional arguments that we need
+        |                                        ^~~~~
+        |                                        args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:620:53: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    620 |                     second_pass_convert.resize(func.nargs, false);
+        |                                                     ^~~~~
+        |                                                     args
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:43,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python/pybind_utils.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/opaque_types.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/vector.cpp:4:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:185:10: error: ‘uint16_t’ in namespace ‘std’ does not name a type; did you mean ‘wint_t’?
+    185 |     std::uint16_t nargs;
+        |          ^~~~~~~~
+        |          wint_t
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h: In constructor ‘pybind11::detail::function_call::function_call(pybind11::detail::function_record&, pybind11::handle)’:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:283:20: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    283 |     args.reserve(f.nargs);
+        |                    ^~~~~
+        |                    args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:284:28: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    284 |     args_convert.reserve(f.nargs);
+        |                            ^~~~~
+        |                            args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In member function ‘void pybind11::cpp_function::initialize_generic(pybind11::detail::function_record*, const char*, const std::type_info* const*, pybind11::size_t)’:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:14: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    291 |         rec->nargs = (std::uint16_t) args;
+        |              ^~~~~
+        |              args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:28: error: ‘uint16_t’ is not a member of ‘std’; did you mean ‘wint_t’?
+    291 |         rec->nargs = (std::uint16_t) args;
+        |                            ^~~~~~~~
+        |                            wint_t
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In static member function ‘static PyObject* pybind11::cpp_function::dispatcher(PyObject*, PyObject*, PyObject*)’:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:489:40: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    489 |                 size_t pos_args = func.nargs;    // Number of positional arguments that we need
+        |                                        ^~~~~
+        |                                        args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:620:53: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    620 |                     second_pass_convert.resize(func.nargs, false);
+        |                                                     ^~~~~
+        |                                                     args
+  In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:43,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python/pybind_utils.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/opaque_types.h:6,
+                   from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/svm_c_trainer.cpp:4:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:185:10: error: ‘uint16_t’ in namespace ‘std’ does not name a type; did you mean ‘wint_t’?
+    185 |     std::uint16_t nargs;
+        |          ^~~~~~~~
+        |          wint_t
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h: In constructor ‘pybind11::detail::function_call::function_call(pybind11::detail::function_record&, pybind11::handle)’:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:283:20: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    283 |     args.reserve(f.nargs);
+        |                    ^~~~~
+        |                    args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:284:28: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    284 |     args_convert.reserve(f.nargs);
+        |                            ^~~~~
+        |                            args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In member function ‘void pybind11::cpp_function::initialize_generic(pybind11::detail::function_record*, const char*, const std::type_info* const*, pybind11::size_t)’:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:14: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    291 |         rec->nargs = (std::uint16_t) args;
+        |              ^~~~~
+        |              args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:28: error: ‘uint16_t’ is not a member of ‘std’; did you mean ‘wint_t’?
+    291 |         rec->nargs = (std::uint16_t) args;
+        |                            ^~~~~~~~
+        |                            wint_t
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In static member function ‘static PyObject* pybind11::cpp_function::dispatcher(PyObject*, PyObject*, PyObject*)’:
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:489:40: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    489 |                 size_t pos_args = func.nargs;    // Number of positional arguments that we need
+        |                                        ^~~~~
+        |                                        args
+  /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:620:53: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+    620 |                     second_pass_convert.resize(func.nargs, false);
+        |                                                     ^~~~~
+        |                                                     args
+  gmake[2]: *** [CMakeFiles/dlib_python.dir/build.make:76: CMakeFiles/dlib_python.dir/src/dlib.cpp.o] Error 1
+  gmake[2]: *** Waiting for unfinished jobs....
+  gmake[2]: *** [CMakeFiles/dlib_python.dir/build.make:90: CMakeFiles/dlib_python.dir/src/matrix.cpp.o] Error 1
+  gmake[2]: *** [CMakeFiles/dlib_python.dir/build.make:104: CMakeFiles/dlib_python.dir/src/vector.cpp.o] Error 1
+  gmake[2]: *** [CMakeFiles/dlib_python.dir/build.make:118: CMakeFiles/dlib_python.dir/src/svm_c_trainer.cpp.o] Error 1
+  gmake[1]: *** [CMakeFiles/Makefile2:118: CMakeFiles/dlib_python.dir/all] Error 2
+  gmake: *** [Makefile:91: all] Error 2
+  Traceback (most recent call last):
+    File "<string>", line 1, in <module>
+    File "/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/setup.py", line 261, in <module>
+      'Topic :: Software Development',
+    File "/root/face_recog/venv/lib/python3.6/site-packages/setuptools/__init__.py", line 153, in setup
+      return distutils.core.setup(**attrs)
+    File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/core.py", line 148, in setup
+      dist.run_commands()
+    File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/dist.py", line 955, in run_commands
+      self.run_command(cmd)
+    File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/dist.py", line 974, in run_command
+      cmd_obj.run()
+    File "/root/face_recog/venv/lib/python3.6/site-packages/wheel/bdist_wheel.py", line 299, in run
+      self.run_command('build')
+    File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/cmd.py", line 313, in run_command
+      self.distribution.run_command(command)
+    File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/dist.py", line 974, in run_command
+      cmd_obj.run()
+    File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/command/build.py", line 135, in run
+      self.run_command(cmd_name)
+    File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/cmd.py", line 313, in run_command
+      self.distribution.run_command(command)
+    File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/dist.py", line 974, in run_command
+      cmd_obj.run()
+    File "/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/setup.py", line 135, in run
+      self.build_extension(ext)
+    File "/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/setup.py", line 175, in build_extension
+      subprocess.check_call(cmake_build, cwd=build_folder)
+    File "/root/.pyenv/versions/3.6.15/lib/python3.6/subprocess.py", line 311, in check_call
+      raise CalledProcessError(retcode, cmd)
+  subprocess.CalledProcessError: Command '['cmake', '--build', '.', '--config', 'Release', '--', '-j4']' returned non-zero exit status 2.
+  ----------------------------------------
+  ERROR: Failed building wheel for dlib
+  Running setup.py clean for dlib
+Failed to build dlib
+Installing collected packages: dlib
+  Attempting uninstall: dlib
+    Found existing installation: dlib 19.24.8
+    Uninstalling dlib-19.24.8:
+      Successfully uninstalled dlib-19.24.8
+    Running setup.py install for dlib: started
+    Running setup.py install for dlib: still running...
+    Running setup.py install for dlib: finished with status 'error'
+    ERROR: Command errored out with exit status 1:
+     command: /root/face_recog/venv/bin/python -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/setup.py'"'"'; __file__='"'"'/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-d9jzvxlk/install-record.txt --single-version-externally-managed --compile --install-headers /root/face_recog/venv/include/site/python3.6/dlib
+         cwd: /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/
+    Complete output (829 lines):
+    running install
+    /root/face_recog/venv/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+      setuptools.SetuptoolsDeprecationWarning,
+    running build
+    running build_py
+    package init file 'dlib/__init__.py' not found (or not a regular file)
+    running build_ext
+    Building extension for Python 3.6.15 (default, Apr 28 2025, 00:40:56)
+    Invoking CMake setup: 'cmake /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/build/lib.linux-x86_64-3.6 -DPYTHON_EXECUTABLE=/root/face_recog/venv/bin/python -DCMAKE_BUILD_TYPE=Release'
+    CMake Deprecation Warning at CMakeLists.txt:2 (CMAKE_MINIMUM_REQUIRED):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    
+    
+    -- The C compiler identification is GNU 13.3.0
+    -- The CXX compiler identification is GNU 13.3.0
+    -- Detecting C compiler ABI info
+    -- Detecting C compiler ABI info - done
+    -- Check for working C compiler: /usr/bin/cc - skipped
+    -- Detecting C compile features
+    -- Detecting C compile features - done
+    -- Detecting CXX compiler ABI info
+    -- Detecting CXX compiler ABI info - done
+    -- Check for working CXX compiler: /usr/bin/c++ - skipped
+    -- Detecting CXX compile features
+    -- Detecting CXX compile features - done
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/CMakeLists.txt:8 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    
+    
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/tools/pybind11Tools.cmake:8 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    Call Stack (most recent call first):
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/CMakeLists.txt:33 (include)
+    
+    
+    CMake Warning (dev) at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/tools/FindPythonLibsNew.cmake:60 (find_package):
+      Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+      are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+      the cmake_policy command to set the policy and suppress this warning.
+    
+    Call Stack (most recent call first):
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/tools/pybind11Tools.cmake:16 (find_package)
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/CMakeLists.txt:33 (include)
+    This warning is for project developers.  Use -Wno-dev to suppress it.
+    
+    -- Found PythonInterp: /root/face_recog/venv/bin/python (found version "3.6.15")
+    -- Found PythonLibs: /root/.pyenv/versions/3.6.15/lib/libpython3.6m.so
+    -- Performing Test HAS_CPP14_FLAG
+    -- Performing Test HAS_CPP14_FLAG - Success
+    -- pybind11 v2.2.2
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:7 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    
+    
+    -- Using CMake version: 3.28.3
+    -- Compiling dlib version: 19.19.0
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/set_compiler_specific_options.cmake:2 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    Call Stack (most recent call first):
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:30 (include)
+    
+    
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/check_if_sse4_instructions_executable_on_host.cmake:3 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    Call Stack (most recent call first):
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/set_compiler_specific_options.cmake:13 (include)
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:30 (include)
+    
+    
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_sse4/CMakeLists.txt:2 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    
+    
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/set_compiler_specific_options.cmake:2 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    Call Stack (most recent call first):
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_sse4/CMakeLists.txt:8 (include)
+    
+    
+    -- SSE4 instructions can be executed by the host processor.
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/check_if_avx_instructions_executable_on_host.cmake:3 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    Call Stack (most recent call first):
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/set_compiler_specific_options.cmake:17 (include)
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:30 (include)
+    
+    
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_avx/CMakeLists.txt:2 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    
+    
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/set_compiler_specific_options.cmake:2 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    Call Stack (most recent call first):
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_avx/CMakeLists.txt:8 (include)
+    
+    
+    -- AVX instructions can be executed by the host processor.
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/check_if_neon_available.cmake:3 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    Call Stack (most recent call first):
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/set_compiler_specific_options.cmake:21 (include)
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:30 (include)
+    
+    
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_neon/CMakeLists.txt:2 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    
+    
+    -- Enabling AVX instructions
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/use_cpp_11.cmake:5 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    Call Stack (most recent call first):
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:47 (include)
+    
+    
+    -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+    -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+    -- Found Threads: TRUE
+    -- Found X11: /usr/include
+    -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+    -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+    -- Looking for gethostbyname
+    -- Looking for gethostbyname - found
+    -- Looking for connect
+    -- Looking for connect - found
+    -- Looking for remove
+    -- Looking for remove - found
+    -- Looking for shmat
+    -- Looking for shmat - found
+    -- Looking for IceConnectionNumber in ICE
+    -- Looking for IceConnectionNumber in ICE - found
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/find_libpng.cmake:4 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    Call Stack (most recent call first):
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:436 (include)
+    
+    
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_libpng/CMakeLists.txt:2 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    
+    
+    -- Found system copy of libpng: /usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libz.so
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/find_libjpeg.cmake:4 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    Call Stack (most recent call first):
+      /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:497 (include)
+    
+    
+    CMake Deprecation Warning at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cmake_utils/test_for_libjpeg/CMakeLists.txt:2 (cmake_minimum_required):
+      Compatibility with CMake < 3.5 will be removed from a future version of
+      CMake.
+    
+      Update the VERSION argument <min> value or use a ...<max> suffix to tell
+      CMake that the project does not need compatibility with older versions.
+    
+    
+    -- Found system copy of libjpeg: /usr/lib/x86_64-linux-gnu/libjpeg.so
+    -- Searching for BLAS and LAPACK
+    -- Searching for BLAS and LAPACK
+    -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1")
+    -- Checking for module 'cblas'
+    --   Package 'cblas', required by 'virtual:world', not found
+    -- Checking for module 'lapack'
+    --   Found lapack, version 0.3.26+ds
+    -- Looking for sys/types.h
+    -- Looking for sys/types.h - found
+    -- Looking for stdint.h
+    -- Looking for stdint.h - found
+    -- Looking for stddef.h
+    -- Looking for stddef.h - found
+    -- Check size of void*
+    -- Check size of void* - done
+    -- Found OpenBLAS library
+    -- Looking for sgetrf_single
+    -- Looking for sgetrf_single - found
+    -- Using OpenBLAS's built in LAPACK
+    -- Looking for cblas_ddot
+    -- Looking for cblas_ddot - found
+    -- Looking for sgesv
+    -- Looking for sgesv - not found
+    -- Looking for sgesv_
+    -- Looking for sgesv_ - not found
+    CMake Warning (dev) at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/CMakeLists.txt:607 (find_package):
+      Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake
+      --help-policy CMP0146" for policy details.  Use the cmake_policy command to
+      set the policy and suppress this warning.
+    
+    This warning is for project developers.  Use -Wno-dev to suppress it.
+    
+    CUDA_TOOLKIT_ROOT_DIR not found or specified
+    -- Could NOT find CUDA (missing: CUDA_TOOLKIT_ROOT_DIR CUDA_NVCC_EXECUTABLE CUDA_INCLUDE_DIRS CUDA_CUDART_LIBRARY) (Required is at least version "7.5")
+    -- DID NOT FIND CUDA
+    -- Disabling CUDA support for dlib.  DLIB WILL NOT USE CUDA
+    -- C++11 activated.
+    -- Configuring done (19.4s)
+    -- Generating done (0.0s)
+    -- Build files have been written to: /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/build/temp.linux-x86_64-3.6
+    Invoking CMake build: 'cmake --build . --config Release -- -j4'
+    [  2%] Building CXX object dlib_build/CMakeFiles/dlib.dir/base64/base64_kernel_1.cpp.o
+    [  2%] Building CXX object dlib_build/CMakeFiles/dlib.dir/bit_stream/bit_stream_kernel_1.cpp.o
+    [  3%] Building CXX object dlib_build/CMakeFiles/dlib.dir/bigint/bigint_kernel_1.cpp.o
+    [  4%] Building CXX object dlib_build/CMakeFiles/dlib.dir/bigint/bigint_kernel_2.cpp.o
+    [  5%] Building CXX object dlib_build/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_1.cpp.o
+    [  6%] Building CXX object dlib_build/CMakeFiles/dlib.dir/entropy_decoder/entropy_decoder_kernel_2.cpp.o
+    [  8%] Building CXX object dlib_build/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_1.cpp.o
+    [  9%] Building CXX object dlib_build/CMakeFiles/dlib.dir/entropy_encoder/entropy_encoder_kernel_2.cpp.o
+    [ 10%] Building CXX object dlib_build/CMakeFiles/dlib.dir/md5/md5_kernel_1.cpp.o
+    [ 11%] Building CXX object dlib_build/CMakeFiles/dlib.dir/tokenizer/tokenizer_kernel_1.cpp.o
+    [ 12%] Building CXX object dlib_build/CMakeFiles/dlib.dir/unicode/unicode.cpp.o
+    [ 13%] Building CXX object dlib_build/CMakeFiles/dlib.dir/data_io/image_dataset_metadata.cpp.o
+    [ 15%] Building CXX object dlib_build/CMakeFiles/dlib.dir/data_io/mnist.cpp.o
+    [ 16%] Building CXX object dlib_build/CMakeFiles/dlib.dir/global_optimization/global_function_search.cpp.o
+    In file included from /usr/include/features.h:502,
+                     from /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:39,
+                     from /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:679,
+                     from /usr/include/c++/13/bits/requires_hosted.h:31,
+                     from /usr/include/c++/13/sstream:38,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/unicode/../assert.h:7,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/unicode/../uintn.h:7,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/unicode/unicode.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/unicode/unicode.cpp:5:
+    In function ‘size_t mbstowcs(wchar_t*, const char*, size_t)’,
+        inlined from ‘const std::wstring dlib::convert_mbstring_to_wstring(const std::string&)’ at /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/unicode/unicode.cpp:155:22:
+    /usr/include/x86_64-linux-gnu/bits/stdlib.h:123:12: warning: argument 1 is null but the corresponding size argument 3 value is 18446744073709551612 [-Wnonnull]
+      123 |     return __glibc_fortify_n (mbstowcs, __len, sizeof (wchar_t),
+          |            ^~~~~~~~~~~~~~~~~
+    /usr/include/x86_64-linux-gnu/bits/stdlib.h: In function ‘const std::wstring dlib::convert_mbstring_to_wstring(const std::string&)’:
+    /usr/include/x86_64-linux-gnu/bits/stdlib.h:104:15: note: in a call to function ‘size_t __mbstowcs_alias(wchar_t*, const char*, size_t)’ declared with attribute ‘access (read_only, 2)’
+      104 | extern size_t __REDIRECT_NTH (__mbstowcs_alias,
+          |               ^~~~~~~~~~~~~~
+    [ 17%] Building CXX object dlib_build/CMakeFiles/dlib.dir/filtering/kalman_filter.cpp.o
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../geometry/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../geometry/vector.h:12,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../geometry/rectangle.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../geometry.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/image_dataset_metadata.h:8,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/image_dataset_metadata.cpp:6:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/image_dataset_metadata.h:6:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/mnist.h:9,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/mnist.cpp:6:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/data_io/mnist.h:7:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/global_optimization/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/global_optimization/../matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/global_optimization/global_function_search.h:8,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/global_optimization/global_function_search.cpp:2:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/global_optimization/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_algobase.h:65,
+                     from /usr/include/c++/13/vector:62,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/global_optimization/global_function_search.h:7:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/../matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/kalman_filter.h:7,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/kalman_filter.cpp:6:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/../matrix/../algs.h:93,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/filtering/../matrix/matrix_exp.h:6:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    [ 18%] Building CXX object dlib_build/CMakeFiles/dlib.dir/test_for_odr_violations.cpp.o
+    [ 19%] Building CXX object dlib_build/CMakeFiles/dlib.dir/svm/auto.cpp.o
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/../matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/function.h:10,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/auto.h:8,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/auto.cpp:6:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/../algs.h:93,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/svm/auto.h:7:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    [ 20%] Building CXX object dlib_build/CMakeFiles/dlib.dir/sockets/sockets_kernel_1.cpp.o
+    [ 22%] Building CXX object dlib_build/CMakeFiles/dlib.dir/bsp/bsp.cpp.o
+    [ 23%] Building CXX object dlib_build/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_1.cpp.o
+    [ 24%] Building CXX object dlib_build/CMakeFiles/dlib.dir/dir_nav/dir_nav_kernel_2.cpp.o
+    [ 25%] Building CXX object dlib_build/CMakeFiles/dlib.dir/dir_nav/dir_nav_extensions.cpp.o
+    [ 26%] Building CXX object dlib_build/CMakeFiles/dlib.dir/linker/linker_kernel_1.cpp.o
+    [ 27%] Building CXX object dlib_build/CMakeFiles/dlib.dir/logger/extra_logger_headers.cpp.o
+    [ 29%] Building CXX object dlib_build/CMakeFiles/dlib.dir/logger/logger_kernel_1.cpp.o
+    [ 30%] Building CXX object dlib_build/CMakeFiles/dlib.dir/logger/logger_config_file.cpp.o
+    [ 31%] Building CXX object dlib_build/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_1.cpp.o
+    [ 32%] Building CXX object dlib_build/CMakeFiles/dlib.dir/misc_api/misc_api_kernel_2.cpp.o
+    [ 33%] Building CXX object dlib_build/CMakeFiles/dlib.dir/sockets/sockets_extensions.cpp.o
+    [ 34%] Building CXX object dlib_build/CMakeFiles/dlib.dir/sockets/sockets_kernel_2.cpp.o
+    [ 36%] Building CXX object dlib_build/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf.cpp.o
+    [ 37%] Building CXX object dlib_build/CMakeFiles/dlib.dir/sockstreambuf/sockstreambuf_unbuffered.cpp.o
+    [ 38%] Building CXX object dlib_build/CMakeFiles/dlib.dir/server/server_kernel.cpp.o
+    [ 39%] Building CXX object dlib_build/CMakeFiles/dlib.dir/server/server_iostream.cpp.o
+    [ 40%] Building CXX object dlib_build/CMakeFiles/dlib.dir/server/server_http.cpp.o
+    [ 41%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/multithreaded_object_extension.cpp.o
+    [ 43%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/threaded_object_extension.cpp.o
+    [ 44%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/threads_kernel_1.cpp.o
+    [ 45%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/threads_kernel_2.cpp.o
+    [ 46%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/threads_kernel_shared.cpp.o
+    [ 47%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/thread_pool_extension.cpp.o
+    [ 48%] Building CXX object dlib_build/CMakeFiles/dlib.dir/threads/async.cpp.o
+    [ 50%] Building CXX object dlib_build/CMakeFiles/dlib.dir/timer/timer.cpp.o
+    [ 51%] Building CXX object dlib_build/CMakeFiles/dlib.dir/stack_trace.cpp.o
+    [ 52%] Building CXX object dlib_build/CMakeFiles/dlib.dir/cuda/cpu_dlib.cpp.o
+    [ 53%] Building CXX object dlib_build/CMakeFiles/dlib.dir/cuda/tensor_tools.cpp.o
+    [ 54%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_widgets/fonts.cpp.o
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/tensor.h:8,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/cpu_dlib.h:9,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/cpu_dlib.cpp:8:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/../algs.h:93,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/matrix_exp.h:6:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/tensor.h:8,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/tensor_tools.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/tensor_tools.cpp:6:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/../algs.h:93,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/cuda/../matrix/matrix_exp.h:6:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    [ 55%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_widgets/widgets.cpp.o
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/vector.h:12,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/rectangle.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:20,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/xlib.h:4,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core.h:14,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/fonts.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/fonts.cpp:6:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_construct.h:61,
+                     from /usr/include/c++/13/bits/stl_tempbuf.h:61,
+                     from /usr/include/c++/13/memory:66,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/fonts.h:7:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/vector.h:12,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/rectangle.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:20,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/xlib.h:4,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core.h:14,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/drawable.h:10,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/widgets.h:16,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/widgets.cpp:9:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_algobase.h:65,
+                     from /usr/include/c++/13/algorithm:60,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/widgets.cpp:6:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    [ 56%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_widgets/drawable.cpp.o
+    [ 58%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_widgets/canvas_drawing.cpp.o
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/vector.h:12,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/rectangle.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:20,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/xlib.h:4,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core.h:14,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/drawable.h:10,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/drawable.cpp:6:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_construct.h:61,
+                     from /usr/include/c++/13/bits/stl_tempbuf.h:61,
+                     from /usr/include/c++/13/memory:66,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/drawable.h:7:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/vector.h:12,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/rectangle.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:20,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/xlib.h:4,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core.h:14,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/canvas_drawing.h:8,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/canvas_drawing.cpp:6:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:15:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    [ 59%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_widgets/style.cpp.o
+    [ 60%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_widgets/base_widgets.cpp.o
+    [ 61%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_1.cpp.o
+    [ 62%] Building CXX object dlib_build/CMakeFiles/dlib.dir/gui_core/gui_core_kernel_2.cpp.o
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/vector.h:12,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/rectangle.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:20,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/xlib.h:4,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core.h:14,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/style.h:8,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/style.cpp:6:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../algs.h:93,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/style.h:6:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/vector.h:12,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/rectangle.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/gui_core_kernel_2.h:20,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/xlib.h:4,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core.h:14,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/drawable.h:10,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/base_widgets.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/base_widgets.cpp:9:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/../gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /usr/include/c++/13/bits/locale_classes.h:40,
+                     from /usr/include/c++/13/bits/ios_base.h:41,
+                     from /usr/include/c++/13/ios:44,
+                     from /usr/include/c++/13/ostream:40,
+                     from /usr/include/c++/13/iostream:41,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_widgets/base_widgets.cpp:6:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/../geometry/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/../geometry/vector.h:12,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/../geometry/rectangle.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/gui_core_kernel_2.h:20,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/gui_core_kernel_2.cpp:9:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/gui_core/gui_core_kernel_2.h:15:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    [ 63%] Building CXX object dlib_build/CMakeFiles/dlib.dir/image_loader/png_loader.cpp.o
+    [ 65%] Building CXX object dlib_build/CMakeFiles/dlib.dir/image_saver/save_png.cpp.o
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/vector.h:12,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/rectangle.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/array2d_kernel.h:10,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d.h:7,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/png_loader.cpp:9:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../algs.h:93,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/array2d_kernel.h:7:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../sliding_buffer/../matrix/matrix_op.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../sliding_buffer/../matrix/matrix_mat.h:9,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../sliding_buffer/circular_buffer.h:10,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../sliding_buffer.h:9,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../entropy_encoder_model.h:16,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/image_saver.h:14,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/save_png.h:7,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/save_png.cpp:9:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../sliding_buffer/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /usr/include/c++/13/bits/locale_classes.h:40,
+                     from /usr/include/c++/13/bits/ios_base.h:41,
+                     from /usr/include/c++/13/ios:44,
+                     from /usr/include/c++/13/ostream:40,
+                     from /usr/include/c++/13/iostream:41,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/image_saver.h:7:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    [ 66%] Building CXX object dlib_build/CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.o
+    [ 67%] Building CXX object dlib_build/CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.o
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/vector.h:12,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/rectangle.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/array2d_kernel.h:10,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d.h:7,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/jpeg_loader.cpp:9:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/../algs.h:93,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_loader/../array2d/array2d_kernel.h:7:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/../geometry/../matrix/matrix.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/../geometry/vector.h:12,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/../geometry/rectangle.h:11,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/array2d_kernel.h:10,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d.h:7,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/save_jpeg.cpp:9:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/../geometry/../matrix/matrix_exp.h:60:45: warning: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ is deprecated [-Wdeprecated-declarations]
+       60 |     class matrix_exp_iterator : public std::iterator<std::forward_iterator_tag, typename matrix_traits<EXP>::type>
+          |                                             ^~~~~~~~
+    In file included from /usr/include/c++/13/bits/stl_iterator_base_funcs.h:66,
+                     from /usr/include/c++/13/string:47,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/../algs.h:93,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/image_saver/../array2d/array2d_kernel.h:7:
+    /usr/include/c++/13/bits/stl_iterator_base_types.h:127:34: note: declared here
+      127 |     struct _GLIBCXX17_DEPRECATED iterator
+          |                                  ^~~~~~~~
+    [ 68%] Linking CXX static library libdlib.a
+    [ 68%] Built target dlib
+    [ 73%] Building CXX object CMakeFiles/dlib_python.dir/src/svm_c_trainer.cpp.o
+    [ 73%] Building CXX object CMakeFiles/dlib_python.dir/src/dlib.cpp.o
+    [ 73%] Building CXX object CMakeFiles/dlib_python.dir/src/matrix.cpp.o
+    [ 73%] Building CXX object CMakeFiles/dlib_python.dir/src/vector.cpp.o
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:43,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python/pybind_utils.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/opaque_types.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/dlib.cpp:4:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:185:10: error: ‘uint16_t’ in namespace ‘std’ does not name a type; did you mean ‘wint_t’?
+      185 |     std::uint16_t nargs;
+          |          ^~~~~~~~
+          |          wint_t
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h: In constructor ‘pybind11::detail::function_call::function_call(pybind11::detail::function_record&, pybind11::handle)’:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:283:20: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      283 |     args.reserve(f.nargs);
+          |                    ^~~~~
+          |                    args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:284:28: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      284 |     args_convert.reserve(f.nargs);
+          |                            ^~~~~
+          |                            args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In member function ‘void pybind11::cpp_function::initialize_generic(pybind11::detail::function_record*, const char*, const std::type_info* const*, pybind11::size_t)’:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:14: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      291 |         rec->nargs = (std::uint16_t) args;
+          |              ^~~~~
+          |              args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:28: error: ‘uint16_t’ is not a member of ‘std’; did you mean ‘wint_t’?
+      291 |         rec->nargs = (std::uint16_t) args;
+          |                            ^~~~~~~~
+          |                            wint_t
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In static member function ‘static PyObject* pybind11::cpp_function::dispatcher(PyObject*, PyObject*, PyObject*)’:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:489:40: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      489 |                 size_t pos_args = func.nargs;    // Number of positional arguments that we need
+          |                                        ^~~~~
+          |                                        args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:620:53: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      620 |                     second_pass_convert.resize(func.nargs, false);
+          |                                                     ^~~~~
+          |                                                     args
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:43,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python/pybind_utils.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/opaque_types.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/matrix.cpp:4:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:185:10: error: ‘uint16_t’ in namespace ‘std’ does not name a type; did you mean ‘wint_t’?
+      185 |     std::uint16_t nargs;
+          |          ^~~~~~~~
+          |          wint_t
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h: In constructor ‘pybind11::detail::function_call::function_call(pybind11::detail::function_record&, pybind11::handle)’:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:283:20: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      283 |     args.reserve(f.nargs);
+          |                    ^~~~~
+          |                    args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:284:28: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      284 |     args_convert.reserve(f.nargs);
+          |                            ^~~~~
+          |                            args
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:43,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python/pybind_utils.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/opaque_types.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/vector.cpp:4:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:185:10: error: ‘uint16_t’ in namespace ‘std’ does not name a type; did you mean ‘wint_t’?
+      185 |     std::uint16_t nargs;
+          |          ^~~~~~~~
+          |          wint_t
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h: In constructor ‘pybind11::detail::function_call::function_call(pybind11::detail::function_record&, pybind11::handle)’:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:283:20: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      283 |     args.reserve(f.nargs);
+          |                    ^~~~~
+          |                    args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:284:28: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      284 |     args_convert.reserve(f.nargs);
+          |                            ^~~~~
+          |                            args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In member function ‘void pybind11::cpp_function::initialize_generic(pybind11::detail::function_record*, const char*, const std::type_info* const*, pybind11::size_t)’:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:14: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      291 |         rec->nargs = (std::uint16_t) args;
+          |              ^~~~~
+          |              args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:28: error: ‘uint16_t’ is not a member of ‘std’; did you mean ‘wint_t’?
+      291 |         rec->nargs = (std::uint16_t) args;
+          |                            ^~~~~~~~
+          |                            wint_t
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In static member function ‘static PyObject* pybind11::cpp_function::dispatcher(PyObject*, PyObject*, PyObject*)’:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:489:40: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      489 |                 size_t pos_args = func.nargs;    // Number of positional arguments that we need
+          |                                        ^~~~~
+          |                                        args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:620:53: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      620 |                     second_pass_convert.resize(func.nargs, false);
+          |                                                     ^~~~~
+          |                                                     args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In member function ‘void pybind11::cpp_function::initialize_generic(pybind11::detail::function_record*, const char*, const std::type_info* const*, pybind11::size_t)’:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:14: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      291 |         rec->nargs = (std::uint16_t) args;
+          |              ^~~~~
+          |              args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:28: error: ‘uint16_t’ is not a member of ‘std’; did you mean ‘wint_t’?
+      291 |         rec->nargs = (std::uint16_t) args;
+          |                            ^~~~~~~~
+          |                            wint_t
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In static member function ‘static PyObject* pybind11::cpp_function::dispatcher(PyObject*, PyObject*, PyObject*)’:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:489:40: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      489 |                 size_t pos_args = func.nargs;    // Number of positional arguments that we need
+          |                                        ^~~~~
+          |                                        args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:620:53: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      620 |                     second_pass_convert.resize(func.nargs, false);
+          |                                                     ^~~~~
+          |                                                     args
+    In file included from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:43,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python/pybind_utils.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/../dlib/python.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/opaque_types.h:6,
+                     from /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/tools/python/src/svm_c_trainer.cpp:4:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:185:10: error: ‘uint16_t’ in namespace ‘std’ does not name a type; did you mean ‘wint_t’?
+      185 |     std::uint16_t nargs;
+          |          ^~~~~~~~
+          |          wint_t
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h: In constructor ‘pybind11::detail::function_call::function_call(pybind11::detail::function_record&, pybind11::handle)’:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:283:20: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      283 |     args.reserve(f.nargs);
+          |                    ^~~~~
+          |                    args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/attr.h:284:28: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      284 |     args_convert.reserve(f.nargs);
+          |                            ^~~~~
+          |                            args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In member function ‘void pybind11::cpp_function::initialize_generic(pybind11::detail::function_record*, const char*, const std::type_info* const*, pybind11::size_t)’:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:14: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      291 |         rec->nargs = (std::uint16_t) args;
+          |              ^~~~~
+          |              args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:291:28: error: ‘uint16_t’ is not a member of ‘std’; did you mean ‘wint_t’?
+      291 |         rec->nargs = (std::uint16_t) args;
+          |                            ^~~~~~~~
+          |                            wint_t
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h: In static member function ‘static PyObject* pybind11::cpp_function::dispatcher(PyObject*, PyObject*, PyObject*)’:
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:489:40: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      489 |                 size_t pos_args = func.nargs;    // Number of positional arguments that we need
+          |                                        ^~~~~
+          |                                        args
+    /tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/dlib/external/pybind11/include/pybind11/pybind11.h:620:53: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+      620 |                     second_pass_convert.resize(func.nargs, false);
+          |                                                     ^~~~~
+          |                                                     args
+    gmake[2]: *** [CMakeFiles/dlib_python.dir/build.make:76: CMakeFiles/dlib_python.dir/src/dlib.cpp.o] Error 1
+    gmake[2]: *** Waiting for unfinished jobs....
+    gmake[2]: *** [CMakeFiles/dlib_python.dir/build.make:90: CMakeFiles/dlib_python.dir/src/matrix.cpp.o] Error 1
+    gmake[2]: *** [CMakeFiles/dlib_python.dir/build.make:104: CMakeFiles/dlib_python.dir/src/vector.cpp.o] Error 1
+    gmake[2]: *** [CMakeFiles/dlib_python.dir/build.make:118: CMakeFiles/dlib_python.dir/src/svm_c_trainer.cpp.o] Error 1
+    gmake[1]: *** [CMakeFiles/Makefile2:118: CMakeFiles/dlib_python.dir/all] Error 2
+    gmake: *** [Makefile:91: all] Error 2
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/setup.py", line 261, in <module>
+        'Topic :: Software Development',
+      File "/root/face_recog/venv/lib/python3.6/site-packages/setuptools/__init__.py", line 153, in setup
+        return distutils.core.setup(**attrs)
+      File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/core.py", line 148, in setup
+        dist.run_commands()
+      File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/dist.py", line 955, in run_commands
+        self.run_command(cmd)
+      File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/dist.py", line 974, in run_command
+        cmd_obj.run()
+      File "/root/face_recog/venv/lib/python3.6/site-packages/setuptools/command/install.py", line 68, in run
+        return orig.install.run(self)
+      File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/command/install.py", line 545, in run
+        self.run_command('build')
+      File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/cmd.py", line 313, in run_command
+        self.distribution.run_command(command)
+      File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/dist.py", line 974, in run_command
+        cmd_obj.run()
+      File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/command/build.py", line 135, in run
+        self.run_command(cmd_name)
+      File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/cmd.py", line 313, in run_command
+        self.distribution.run_command(command)
+      File "/root/.pyenv/versions/3.6.15/lib/python3.6/distutils/dist.py", line 974, in run_command
+        cmd_obj.run()
+      File "/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/setup.py", line 135, in run
+        self.build_extension(ext)
+      File "/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/setup.py", line 175, in build_extension
+        subprocess.check_call(cmake_build, cwd=build_folder)
+      File "/root/.pyenv/versions/3.6.15/lib/python3.6/subprocess.py", line 311, in check_call
+        raise CalledProcessError(retcode, cmd)
+    subprocess.CalledProcessError: Command '['cmake', '--build', '.', '--config', 'Release', '--', '-j4']' returned non-zero exit status 2.
+    ----------------------------------------
+  Rolling back uninstall of dlib
+  Moving to /root/face_recog/venv/lib/python3.6/site-packages/_dlib_pybind11.cpython-36m-x86_64-linux-gnu.so
+   from /tmp/pip-uninstall-t39dwdi1/_dlib_pybind11.cpython-36m-x86_64-linux-gnu.so
+  Moving to /root/face_recog/venv/lib/python3.6/site-packages/dlib-19.24.8.dist-info/
+   from /root/face_recog/venv/lib/python3.6/site-packages/~lib-19.24.8.dist-info
+  Moving to /root/face_recog/venv/lib/python3.6/site-packages/dlib/
+   from /root/face_recog/venv/lib/python3.6/site-packages/~lib
+ERROR: Command errored out with exit status 1: /root/face_recog/venv/bin/python -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/setup.py'"'"'; __file__='"'"'/tmp/pip-install-8ic5cu88/dlib_9fd228ca32b643f69dcc26065462550c/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-d9jzvxlk/install-record.txt --single-version-externally-managed --compile --install-headers /root/face_recog/venv/include/site/python3.6/dlib Check the logs for full command output.
