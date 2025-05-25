@@ -99,7 +99,8 @@ We had to use **Python version 3.6.15** only to compile the `dlib` library so th
 4. **Split the Dataset**
    - Run the following script:
      ```bash
-     python lfw_data_split.py
+      python lfw_data_split.py --datasetType masked // for splitting the masked dataset
+       python lfw_data_split.py --datasetType unmasked // for splitting the original lfw dataset
      ```
    - This will create an `lfw_train_test_eval` directory under [lfw](http://_vscodecontentref_/5).
 
@@ -108,7 +109,7 @@ We had to use **Python version 3.6.15** only to compile the `dlib` library so th
 5. **Train the Model**
    - Run the following command:
      ```bash
-     python arcface_train.py --epochs 5 --data_dir "/root/face_recog/lfw/lfw_train_test_eval" --dataset_type "masked_lfw"
+      python arcface_train.py --epochs 5 --data_dir "/root/face_recog/lfw/lfw_train_test_eval/masked" --dataset_type masked_lfw
      ```
    - Customize the `--epochs` argument to values like `10`, `15`, `30`, or `50`.
 

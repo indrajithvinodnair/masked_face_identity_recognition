@@ -3,15 +3,17 @@ BASEPATH = '/root/face_recog/lfw/'
 
 # Paths for dataset merging
 # this is the path to the lfw-deepfunneled dataset inside lfw folder
-ORIGINAL_LFW_PATH = BASEPATH + 'lfw-deepfunneled/lfw-deepfunneled'
+UNMASKED_LFW_PATH = BASEPATH + 'lfw-deepfunneled/lfw-deepfunneled'
 # this is the path to the dataset with the masks
 MASKED_LFW_PATH = BASEPATH + 'lfw-deepfunneled/lfw-deepfunneled_masked'
 # this is the path of the merged dataset
-OUTPUT_MERGED_PATH = BASEPATH + 'lfw_merged'
+MASKED_AND_UNMASKED_MERGED_PATH = BASEPATH + 'lfw_merged'
 
 # Paths for dataset splitting
-INPUT_MERGED_DATASET = BASEPATH + 'lfw_merged'
-OUTPUT_SPLIT_PATH = BASEPATH + 'lfw_train_test_eval'
+UNMASKED_DATASET_SPLIT_PATH = BASEPATH + 'lfw_train_test_eval/unmasked'
+MASKED_DATASET_SPLIT_PATH = BASEPATH + 'lfw_train_test_eval/masked'
+
+
 
 # Paths for training and evaluation
 DATASET_ROOT = BASEPATH + 'lfw_train_test_eval'

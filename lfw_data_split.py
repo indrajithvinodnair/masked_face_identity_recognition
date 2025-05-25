@@ -2,7 +2,9 @@ import os
 import shutil
 import random
 from tqdm import tqdm
-from config import INPUT_MERGED_DATASET, OUTPUT_SPLIT_PATH
+from config import MASKED_AND_UNMASKED_MERGED_PATH, UNMASKED_DATASET_SPLIT_PATH,MASKED_DATASET_SPLIT_PATH,UNMASKED_LFW_PATH
+import argparse
+import sys
 
 def clean_output_directory(output_root):
     """
@@ -42,7 +44,17 @@ def split_by_identity(input_path, output_root, train_ratio=0.7, val_ratio=0.15, 
 
 # === USAGE EXAMPLE ===
 
-# Clean the output directory before splitting
-clean_output_directory(OUTPUT_SPLIT_PATH)
-
-split_by_identity(INPUT_MERGED_DATASET, OUTPUT_SPLIT_PATH)
+parser = argparse.ArgumentParser(description="Split LFW dataset by identity.")
+parser.add_argument(
+    "--datasetType",
+    choices=["masked", "unmasked"],
+    help="Type of dataset to split: 'masked' or 'unmasked'"
+)
+args = parser.parse_args()
+datasetType = args.datasetType.lower()
+if datasetType == "masked":
+    clean_output_directory(MASKED_DATASET_SPLIT_PATH)
+    split_by_identity(MASKED_AND_UNMASKED_MERGED_PATH, MASKED_DATASET_SPLIT_PATH)
+elif datasetType == "unmasked":
+    clean_output_directory(UNMASKED_DATASET_SPLIT_PATH)
+    split_by_identity(UNMASKED_LFW_PATH, UNMASKED_DATASET_SPLIT_PATH)

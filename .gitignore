@@ -7,3 +7,4 @@ venv/lib/python3.6/site-packages/torch/lib/libtorch_cuda.so
 venv/lib/python3.6/site-packages/torch/lib/libtorch_cpu.so
 archive.zip
 archive.zip:Zone.Identifier
+__pycache__/

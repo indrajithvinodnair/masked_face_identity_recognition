@@ -1,7 +1,7 @@
 import os
 import shutil
 from tqdm import tqdm
-from config import ORIGINAL_LFW_PATH, MASKED_LFW_PATH, OUTPUT_MERGED_PATH
+from config import UNMASKED_LFW_PATH, MASKED_LFW_PATH, MASKED_AND_UNMASKED_MERGED_PATH
 
 def merge_lfw_datasets(original_path, masked_path, output_path):
     if os.path.exists(output_path):
@@ -37,4 +37,4 @@ def merge_lfw_datasets(original_path, masked_path, output_path):
 
 # === USAGE EXAMPLE ===
 
-merge_lfw_datasets(ORIGINAL_LFW_PATH, MASKED_LFW_PATH, OUTPUT_MERGED_PATH)
+merge_lfw_datasets(UNMASKED_LFW_PATH, MASKED_LFW_PATH, MASKED_AND_UNMASKED_MERGED_PATH)
