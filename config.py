@@ -20,3 +20,6 @@ TEST_ROOT = BASEPATH + 'lfw_train_test_eval/test'
 # This is where the models and results will be stored to 
 BASELINE_RESULTS_PATH = BASEPATH.replace('/lfw/', '/')+"baseline_results"
 
+# Mask keywords to identify masked images
+mask_keywords = ["n95", "surgical", "kn95"]
+

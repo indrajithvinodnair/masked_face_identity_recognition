@@ -1,7 +1,9 @@
+# train.py
 import os
 import argparse
 import torch
 import torch.nn as nn
+import numpy as np
 from torchvision import datasets, transforms, models
 from torch.utils.data import DataLoader
 from tqdm import tqdm
@@ -9,17 +11,19 @@ import math
 import json
 import matplotlib.pyplot as plt
 from datetime import datetime
-from config import DATASET_ROOT, BASELINE_RESULTS_PATH
+from config import BASELINE_RESULTS_PATH, mask_keywords
+from utils import extract_embedding, cosine_similarity, make_masked_unmasked_pairs
 
 
-# -------- Command-Line Args -------- #
+# -------- Args -------- #
 parser = argparse.ArgumentParser()
-parser.add_argument('--epochs', type=int, required=True, help='Number of training epochs')
-parser.add_argument('--dataset_type', type=str, required=True, help='Dataset identifier (e.g., LFW_only)')
-parser.add_argument('--data_dir', type=str, required=True, help='Path to dataset root')
+parser.add_argument('--epochs', type=int, required=True)
+parser.add_argument('--dataset_type', type=str, required=True)
+parser.add_argument('--data_dir', type=str, required=True)
 args = parser.parse_args()
 
-# -------- ArcFace Loss -------- #
+
+# -------- ArcFace -------- #
 class ArcMarginProduct(nn.Module):
     def __init__(self, in_features, out_features, s=30.0, m=0.50):
         super().__init__()
@@ -37,45 +41,31 @@ class ArcMarginProduct(nn.Module):
         sine = torch.sqrt(1.0 - torch.clamp(cosine**2, 0, 1))
         phi = cosine * self.cos_m - sine * self.sin_m
         phi = torch.where(cosine > self.th, phi, cosine - self.mm)
-        one_hot = torch.nn.functional.one_hot(label, num_classes=self.weight.shape[0]).float()
+        one_hot = nn.functional.one_hot(label, num_classes=self.weight.shape[0]).float()
         logits = (one_hot * phi) + ((1.0 - one_hot) * cosine)
         logits *= self.s
-        print("Class count:", num_classes)
-        print("Example label from train/val:", labels[0].item())
-        print("train_dataset.class_to_idx")
-        print("val_dataset.class_to_idx")
-
-
         return logits
 
-# -------- Data Prep -------- #
+
+# -------- Transforms -------- #
 transform = transforms.Compose([
     transforms.Resize((112, 112)),
     transforms.ToTensor(),
     transforms.Normalize([0.5], [0.5])
 ])
 
+# -------- Data -------- #
 train_dataset = datasets.ImageFolder(os.path.join(args.data_dir, "train"), transform=transform)
 val_dataset = datasets.ImageFolder(os.path.join(args.data_dir, "val"), transform=transform)
 
 train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True, num_workers=2)
-val_loader = DataLoader(val_dataset, batch_size=64, shuffle=False, num_workers=2)
 num_classes = len(train_dataset.classes)
 
-# -------- Model -------- #
-if torch.cuda.is_available():
-    device = torch.device("cuda")
-    device_name = torch.cuda.get_device_name(0)
-    torch.backends.cudnn.benchmark = True  # Enable cuDNN auto-tuner for better performance
-else:
-    device = torch.device("cpu")
-    device_name = "CPU"
+val_root = os.path.join(args.data_dir, "val")
+val_pairs, val_labels = make_masked_unmasked_pairs(val_root, mask_keywords)
 
-# Ensure the correct device is being used
-if device.type == "cuda":
-    torch.cuda.set_device(0)  # Set to the first CUDA device
-
-print(f"Using device: {device} ({device_name})")  # Indicate the device being used
+# -------- Model Setup -------- #
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 backbone = models.resnet50(pretrained=True)
 in_features = backbone.fc.in_features
 backbone.fc = nn.Identity()
@@ -88,7 +78,7 @@ arcface = ArcMarginProduct(embedding_size, num_classes).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(list(model.parameters()) + list(arcface.parameters()), lr=1e-3)
 
-# -------- Logging Setup -------- #
+# -------- Logging -------- #
 experiment_name = f"{args.dataset_type}/epoch_{args.epochs}"
 base_dir = os.path.join(BASELINE_RESULTS_PATH, experiment_name)
 os.makedirs(base_dir, exist_ok=True)
@@ -97,7 +87,7 @@ epoch_losses = []
 epoch_accuracies = []
 start_time = datetime.now()
 
-# -------- Training Loop -------- #
+# -------- Training -------- #
 for epoch in range(args.epochs):
     model.train()
     running_loss = 0.0
@@ -115,53 +105,45 @@ for epoch in range(args.epochs):
     epoch_loss = running_loss / len(train_loader)
     epoch_losses.append(epoch_loss)
 
-    # Validation accuracy
+    # Verification Accuracy (masked ↔ unmasked)
     model.eval()
-    correct = 0
-    total = 0
-    with torch.no_grad():
-        for imgs, labels in val_loader:
-            imgs, labels = imgs.to(device), labels.to(device)
-            embeddings = model(imgs)
-            logits = arcface(embeddings, labels)
-            preds = torch.argmax(logits, dim=1)
-            correct += (preds == labels).sum().item()
-            total += labels.size(0)
-            print(f"Preds: {preds[:5].tolist()}, Labels: {labels[:5].tolist()}")
+    scores = [cosine_similarity(
+        extract_embedding(model, m_path, transform, device),
+        extract_embedding(model, u_path, transform, device))
+        for m_path, u_path in val_pairs
+    ]
+    threshold = 0.5
+    preds = [1 if s > threshold else 0 for s in scores]
 
+    from sklearn.metrics import accuracy_score, roc_auc_score, roc_curve
+    acc = accuracy_score(val_labels, preds)
+    roc_auc = roc_auc_score(val_labels, scores)
+    fpr, tpr, _ = roc_curve(val_labels, scores)
+    tpr_at_fpr001 = tpr[np.argmax(fpr >= 0.01)] if np.any(fpr >= 0.01) else 0
 
-    val_accuracy = correct / total
-    epoch_accuracies.append(val_accuracy)
-    print(f"Epoch [{epoch+1}/{args.epochs}] Loss: {epoch_loss:.4f} | Val Acc: {val_accuracy:.4f}")
+    epoch_accuracies.append(acc)
+    print(f"Epoch [{epoch+1}] Loss: {epoch_loss:.4f} | Verif Acc: {acc:.4f} | AUC: {roc_auc:.4f}")
 
-# -------- Save Outputs -------- #
-end_time = datetime.now()
-total_time = (end_time - start_time).total_seconds()
-time_per_epoch = total_time / args.epochs
-
+# -------- Save -------- #
 torch.save(model, os.path.join(base_dir, "model_full.pth"))
+end_time = datetime.now()
+time_per_epoch = (end_time - start_time).total_seconds() / args.epochs
 
-
-# Save metrics as JSON
 metrics = {
     "dataset": args.dataset_type,
     "epochs": args.epochs,
-    "final_val_accuracy": epoch_accuracies[-1],
+    "last_verif_accuracy": epoch_accuracies[-1],
+    "last_roc_auc": roc_auc,
     "time_per_epoch_sec": time_per_epoch,
-    "notes": "ArcFace + ResNet50"
 }
 with open(os.path.join(base_dir, "metrics.json"), "w") as f:
     json.dump(metrics, f, indent=4)
 
-# Plot curves
-plt.figure(figsize=(8, 4))
-plt.plot(range(1, args.epochs + 1), epoch_losses, label='Loss')
-plt.plot(range(1, args.epochs + 1), epoch_accuracies, label='Validation Accuracy')
+plt.figure()
+plt.plot(range(1, args.epochs + 1), epoch_losses, label="Loss")
+plt.plot(range(1, args.epochs + 1), epoch_accuracies, label="Verif Accuracy")
 plt.xlabel("Epoch")
 plt.ylabel("Metric")
-plt.title(f"Training on {args.dataset_type}")
 plt.legend()
-plt.grid(True)
-plt.tight_layout()
 plt.savefig(os.path.join(base_dir, "training_curves.png"))
 plt.close()
